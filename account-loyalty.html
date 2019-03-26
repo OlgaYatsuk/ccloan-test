@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCloan</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flex-container--header flex-container">
+        <a href="#" class="header__toggler js-menu-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="/" class="header__logo">
+            <svg class="header__logo-img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">О нас</a>
+            <a href="#" class="header__nav-item">Клиентам</a>
+            <a href="#" class="header__nav-item">Программа лояльности</a>
+            <a href="#" class="header__nav-item">Приведи друга</a>
+        </nav>
+        <a href="tel:+380442227733" class="header__phone">044 222-77-33</a>
+        <a href="#" class="button button--purple button--small header__login logged-in"><span>М</span>ихаил <span>Т</span>кач</a>
+        <!--When user is logged in add class 'logged-in' to this button ^ and
+        first letters of name and second name must be in span tag because of design-->
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu-close js-menu-close"></a>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--about js-header-dropdown-link">О нас</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Про компанию</a>
+            <a href="#" class="header__menu-item">Вакансии</a>
+            <a href="#" class="header__menu-item">Юридическая информация</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--clients js-header-dropdown-link">Клиентам</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Вопросы и ответы</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item--invite">Приведи друга</a>
+        <a href="#" class="header__menu-item header__menu-item--loyality">Программа лояльности</a>
+        <div class="header__menu-wrapper">
+            <div class="header__langs">
+                <a href="#" class="header__langs-item">РУС</a>
+                <a href="#" class="header__langs-item active">УКР</a>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-item facebook">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item insta">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-insta"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-menu__transparent-bg"></div>
+</header>
+<main>
+  <button class="ask-widget"></button>
+  <div class="container">
+    <h1 class="heading account-holder">Михаил Ткач</h1>
+  </div>
+  <div class="account">
+    <div class="container flex-container">
+      <div class="account-sidebar js-account-sidebar">
+        <a href="account-application.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-1"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Заявка на кредит</span></a>
+        <a href="account-history.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-2"></use>
+          </svg>
+          <span class="account-sidebar__link-text">История кредитов</span></a>
+        <a href="account-profile.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-3"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Профиль</span></a>
+        <a href="account-friend.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-4"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Приведи друга</span></a>
+        <a href="account-loyalty.html" class="account-sidebar__link is-active">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-5"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Програмы лояльности</span></a>
+        <a href="#" class="account-sidebar__link js-modal-trigger" data-id="#leave-account">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-6"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Выход</span></a>
+      </div>
+      <div class="modal modal--leave-account js-modal" id="leave-account">
+        <button class="modal__close js-close-modal">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="heading heading heading--centered">Выход</h2>
+        <p class="text modal__text">Вы действительно хотите выйти?</p>
+        <button class="button button--purple button--big button--form js-close-modal">Выйти</button>
+        <button class="button button--purple-white button--big button--form">Остаться в кабинете</button>
+      </div>
+      <div class="account-content js-account-content loyalty">
+        <h1 class="heading heading--account">Программа лояльности</h1>
+        <div class="credit-details credit-details--loyalty">
+          <div class="flex-container">
+            <p class="application__label text--account">Мой текущий уровень</p>
+            <p class="application__sum text--account">3</p>
+          </div>
+          <div class="flex-container">
+            <p class="application__label text--account">Стандартная ставка</p>
+            <p class="application__sum text--account text--red sum--old">1.85%</p>
+          </div>
+          <div class="flex-container">
+            <p class="application__label text--account">Моя ставка</p>
+            <p class="application__sum text--account sum--green">1.65%</p>
+          </div>
+          <div class="flex-container">
+            <p class="application__label text--account">Максимальный кредит</p>
+            <p class="application__sum text--account">6000</p>
+          </div>
+          <div class="flex-container">
+            <p class="application__label text--account">Максимальный срок кредита</p>
+            <p class="application__sum text--account">30</p>
+          </div>
+        </div>
+
+        <!--account flag-->
+        <div class="account-flag">
+          <p class="account-flag__total">11%</p>
+          <p class="account-flag__label">моя скидка</p>
+        </div>
+
+        <!--loyalty program-->
+        <div class="loyalty-program-wrapper">
+          <h2 class="heading heading--loyalty">Моя программа лояльности</h2>
+          <div class="loyalty-program flex-container">
+            <div class="info-box info-box--loyalty">
+              <div class="loyalty-lvl">
+                <p class="loyalty-lvl__num">1</p>
+                <p class="loyalty-lvl__label">уровень</p>
+              </div>
+              <div class="loyalty-lvl__tooltip-wrapper">
+                <button class="loyalty-lvl__tooltip-btn"></button>
+                <div class="loyalty-lvl__tooltip">
+                  <p class="text">Ваша мегаэкономия достигнута! Теперь вы можете пользоваться нашим сервисом на VIP - условиях. Общий срок пользования с 4-го по 5-й кредиты – не менее 42 дня, включая пролонгацию</p>
+                </div>
+              </div>
+              <div>
+                <svg class="info-box__icon">
+                  <use xlink:href="./img/sprites/sprite.svg#location-ic"></use>
+                </svg>
+                <p class="info-box__heading">0.33%</p>
+                <div class="info-box__text">
+                  <p class="info-box__text-row">Сидка: 99%</p>
+                  <p class="info-box__text-row">Процентная ставка: 0,01% на первый кредит</p>
+                  <p class="info-box__text-row">Ставка при пролонгации: 1,33%</p>
+                  <p class="info-box__text-row">Льготный период: 5-30 дней</p>
+                  <p class="info-box__text-row">Сумма кредита: от 400 грн. до 4150 грн.</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-box info-box--loyalty">
+              <div>
+                <svg class="info-box__icon">
+                  <use xlink:href="./img/sprites/sprite.svg#location-ic"></use>
+                </svg>
+                <p class="info-box__heading">0.33%</p>
+                <div class="info-box__text">
+                  <p class="info-box__text-row">Сидка: 99%</p>
+                  <p class="info-box__text-row">Процентная ставка: 0,01% на первый кредит</p>
+                  <p class="info-box__text-row">Ставка при пролонгации: 1,33%</p>
+                  <p class="info-box__text-row">Льготный период: 5-30 дней</p>
+                  <p class="info-box__text-row">Сумма кредита: от 400 грн. до 4150 грн.</p>
+                </div>
+              </div>
+              <div class="loyalty-lvl">
+                <p class="loyalty-lvl__num">2</p>
+                <p class="loyalty-lvl__label">уровень</p>
+              </div>
+              <div class="loyalty-lvl__tooltip-wrapper">
+                <button class="loyalty-lvl__tooltip-btn"></button>
+                <div class="loyalty-lvl__tooltip">
+                  <p class="text">Ваша мегаэкономия достигнута! Теперь вы можете пользоваться нашим сервисом на VIP - условиях. Общий срок пользования с 4-го по 5-й кредиты – не менее 42 дня, включая пролонгацию</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-box info-box--loyalty">
+              <div>
+                <svg class="info-box__icon">
+                  <use xlink:href="./img/sprites/sprite.svg#location-ic"></use>
+                </svg>
+                <p class="info-box__heading">0.33%</p>
+                <div class="info-box__text">
+                  <p class="info-box__text-row">Сидка: 99%</p>
+                  <p class="info-box__text-row">Процентная ставка: 0,01% на первый кредит</p>
+                  <p class="info-box__text-row">Ставка при пролонгации: 1,33%</p>
+                  <p class="info-box__text-row">Льготный период: 5-30 дней</p>
+                  <p class="info-box__text-row">Сумма кредита: от 400 грн. до 4150 грн.</p>
+                </div>
+              </div>
+              <div class="loyalty-lvl loyalty-lvl--current">
+                <p class="loyalty-lvl__num">3</p>
+                <p class="loyalty-lvl__label">уровень</p>
+              </div>
+              <div class="loyalty-lvl__tooltip-wrapper">
+                <button class="loyalty-lvl__tooltip-btn"></button>
+                <div class="loyalty-lvl__tooltip">
+                  <p class="text">Ваша мегаэкономия достигнута! Теперь вы можете пользоваться нашим сервисом на VIP - условиях. Общий срок пользования с 4-го по 5-й кредиты – не менее 42 дня, включая пролонгацию</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-box info-box--loyalty">
+              <div>
+                <svg class="info-box__icon">
+                  <use xlink:href="./img/sprites/sprite.svg#location-ic"></use>
+                </svg>
+                <p class="info-box__heading">0.33%</p>
+                <div class="info-box__text">
+                  <p class="info-box__text-row">Сидка: 99%</p>
+                  <p class="info-box__text-row">Процентная ставка: 0,01% на первый кредит</p>
+                  <p class="info-box__text-row">Ставка при пролонгации: 1,33%</p>
+                  <p class="info-box__text-row">Льготный период: 5-30 дней</p>
+                  <p class="info-box__text-row">Сумма кредита: от 400 грн. до 4150 грн.</p>
+                </div>
+              </div>
+              <div class="loyalty-lvl">
+                <p class="loyalty-lvl__num">4</p>
+                <p class="loyalty-lvl__label">уровень</p>
+              </div>
+              <div class="loyalty-lvl__tooltip-wrapper">
+                <button class="loyalty-lvl__tooltip-btn"></button>
+                <div class="loyalty-lvl__tooltip">
+                  <p class="text">Ваша мегаэкономия достигнута! Теперь вы можете пользоваться нашим сервисом на VIP - условиях. Общий срок пользования с 4-го по 5-й кредиты – не менее 42 дня, включая пролонгацию</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="button button--big button--form button--purple">Получить кредит</a>
+        <p class="loyalty__details-text">Программа лояльности предусматривает постепенное снижение процентной ставки на кредит и повышение вашей позиции в кредитном рейтинге при условии своевременного погашения предыдущих займов.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer footer--purple">
+  <div class="container">
+    <div class="footer-contacts">
+      <a href="tel:044 222-77-33" class="footer-contacts__item">044 222-77-33</a>
+      <a href="mailto:help@ccloan.com.ua" class="footer-contacts__item">help@ccloan.com.ua</a>
+    </div>
+    <div class="footer-contacts">
+      <p class="footer-contacts__item">Украина 01004, г. Киев, <br>ул. Бассейная, дом 6</p>
+    </div>
+    <p class="policy-sign">
+      &copy;CCloan. All rights reserved.
+    </p>
+  </div>
+</footer>
+<script src="./js/main.min.js"></script>
+</body>
+</html>

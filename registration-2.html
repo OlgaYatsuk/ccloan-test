@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCloan</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flex-container--header flex-container">
+        <a href="#" class="header__toggler js-menu-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="/" class="header__logo">
+            <svg class="header__logo-img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">О нас</a>
+            <a href="#" class="header__nav-item">Клиентам</a>
+            <a href="#" class="header__nav-item">Программа лояльности</a>
+            <a href="#" class="header__nav-item">Приведи друга</a>
+        </nav>
+        <a href="tel:+380442227733" class="header__phone">044 222-77-33</a>
+        <a href="#" class="button button--purple button--small header__login logged-in"><span>М</span>ихаил <span>Т</span>кач</a>
+        <!--When user is logged in add class 'logged-in' to this button ^ and
+        first letters of name and second name must be in span tag because of design-->
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu-close js-menu-close"></a>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--about js-header-dropdown-link">О нас</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Про компанию</a>
+            <a href="#" class="header__menu-item">Вакансии</a>
+            <a href="#" class="header__menu-item">Юридическая информация</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--clients js-header-dropdown-link">Клиентам</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Вопросы и ответы</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item--invite">Приведи друга</a>
+        <a href="#" class="header__menu-item header__menu-item--loyality">Программа лояльности</a>
+        <div class="header__menu-wrapper">
+            <div class="header__langs">
+                <a href="#" class="header__langs-item">РУС</a>
+                <a href="#" class="header__langs-item active">УКР</a>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-item facebook">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item insta">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-insta"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-menu__transparent-bg"></div>
+</header>
+<main>
+  <button class="ask-widget"></button>
+  <h1 class="heading heading--centered heading--registration">Вы оформляете заявку на займ:</h1>
+  <div class="registration-tabs">
+    <div class="container flex-container">
+      <a href="#" class="registration-tabs__item is-filled"><span class="registration-tabs__item-label">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#checkmark"></use>
+          </svg>
+      </span><span>Регистрация</span></a>
+      <a href="#" class="registration-tabs__item is-active"><span class="registration-tabs__item-label">2</span><span>Паспортные данные</span></a>
+      <a href="#" class="registration-tabs__item"><span class="registration-tabs__item-label">3</span><span>Контактная информация</span></a>
+      <a href="#" class="registration-tabs__item"><span class="registration-tabs__item-label">4</span><span>Дополнительная информация</span></a>
+      <a href="#" class="registration-tabs__item"><span class="registration-tabs__item-label">5</span><span>Фото с паспортом</span></a>
+    </div>
+  </div>
+  <div class="container registration-content">
+    <h2 class="heading">Паспортные данные</h2>
+    <form action="" class="form">
+      <div class="form-item">
+        <label for="name" class="form-item__label form-item__label--required">Имя</label>
+        <input type="text" id="name" class="input">
+      </div>
+      <div class="form-item">
+        <label for="surname" class="form-item__label form-item__label--required">Фамилия</label>
+        <input type="text" id="surname" class="input">
+      </div>
+      <div class="form-item">
+        <label for="phone" class="form-item__label form-item__label--required">Отчество</label>
+        <input type="text" id="phone" class="input">
+      </div>
+      <div class="option-buttons">
+        <input type="checkbox" id="bio-pass" name="bio-pass" class="option-buttons__input js-fields-hide">
+        <label for="bio-pass" class="option-buttons__label">Биометрический паспорт</label>
+      </div>
+      <div class="js-fields-to-hide">
+        <div class="form-item">
+          <label for="pass-ser" class="form-item__label form-item__label--required">Серия паспорта</label>
+          <input type="text" id="pass-ser" class="input">
+        </div>
+      </div>
+      <div class="form-item">
+        <label for="pass-num" class="form-item__label form-item__label--required">Номер паспорта</label>
+        <input type="text" id="pass-num" class="input">
+      </div>
+      <div class="form-item">
+        <label for="issuance-place" class="form-item__label form-item__label--required">Кем выдан паспорт</label>
+        <input type="text" id="issuance-place" class="input">
+      </div>
+      <div class="form-item">
+        <label for="issuance-date" class="form-item__label form-item__label--required">Дата выдачи паспорта</label>
+        <input type="date" id="issuance-date" class="input">
+      </div>
+      <h2 class="heading">Семейное положение</h2>
+      <div class="form-item form-item--select">
+        <label for="relationship" class="form-item__label form-item__label--required">Семейное положение</label>
+        <input id="relationship" type="text" autocomplete="off" class="input input--select js-select-field">
+        <div class="js-select form__select-menu">
+          <p class="form__select-menu-link js-select-option">В браке</p>
+          <p class="form__select-menu-link js-select-option">Гражданский брак</p>
+          <p class="form__select-menu-link js-select-option">Разведен(а)</p>
+          <p class="form__select-menu-link js-select-option">Другое</p>
+        </div>
+      </div>
+      <div class="form-item form-item--select">
+        <label for="providing" class="form-item__label form-item__label--required">Другие лица на содержании</label>
+        <input type="text" id="providing" class="input input--select js-select-field">
+        <div class="js-select form__select-menu">
+          <p class="form__select-menu-link js-select-option">Семье</p>
+          <p class="form__select-menu-link js-select-option">Отсутствуют</p>
+          <p class="form__select-menu-link js-select-option">Другое</p>
+        </div>
+      </div>
+      <button type="submit" class="button button--purple button--form button--big">Далее</button>
+    </form>
+  </div>
+</main>
+<footer class="footer footer--purple">
+  <div class="container">
+    <div class="footer-contacts">
+      <a href="tel:044 222-77-33" class="footer-contacts__item">044 222-77-33</a>
+      <a href="mailto:help@ccloan.com.ua" class="footer-contacts__item">help@ccloan.com.ua</a>
+    </div>
+    <div class="footer-contacts">
+      <p class="footer-contacts__item">Украина 01004, г. Киев, <br>ул. Бассейная, дом 6</p>
+    </div>
+    <p class="policy-sign">
+      &copy;CCloan. All rights reserved.
+    </p>
+  </div>
+</footer>
+<script src="./js/main.min.js"></script>
+</body>
+</html>

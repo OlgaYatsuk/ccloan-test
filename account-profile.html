@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCloan</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flex-container--header flex-container">
+        <a href="#" class="header__toggler js-menu-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="/" class="header__logo">
+            <svg class="header__logo-img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">О нас</a>
+            <a href="#" class="header__nav-item">Клиентам</a>
+            <a href="#" class="header__nav-item">Программа лояльности</a>
+            <a href="#" class="header__nav-item">Приведи друга</a>
+        </nav>
+        <a href="tel:+380442227733" class="header__phone">044 222-77-33</a>
+        <a href="#" class="button button--purple button--small header__login logged-in"><span>М</span>ихаил <span>Т</span>кач</a>
+        <!--When user is logged in add class 'logged-in' to this button ^ and
+        first letters of name and second name must be in span tag because of design-->
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu-close js-menu-close"></a>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--about js-header-dropdown-link">О нас</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Про компанию</a>
+            <a href="#" class="header__menu-item">Вакансии</a>
+            <a href="#" class="header__menu-item">Юридическая информация</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--clients js-header-dropdown-link">Клиентам</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Вопросы и ответы</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item--invite">Приведи друга</a>
+        <a href="#" class="header__menu-item header__menu-item--loyality">Программа лояльности</a>
+        <div class="header__menu-wrapper">
+            <div class="header__langs">
+                <a href="#" class="header__langs-item">РУС</a>
+                <a href="#" class="header__langs-item active">УКР</a>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-item facebook">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item insta">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-insta"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-menu__transparent-bg"></div>
+</header>
+<main>
+  <button class="ask-widget"></button>
+  <div class="container">
+    <h1 class="heading account-holder">Михаил Ткач</h1>
+  </div>
+  <div class="account account--profile">
+    <div class="container flex-container">
+      <div class="account-sidebar js-account-sidebar">
+        <a href="account-application.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-1"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Заявка на кредит</span></a>
+        <a href="account-history.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-2"></use>
+          </svg>
+          <span class="account-sidebar__link-text">История кредитов</span></a>
+        <a href="account-profile.html" class="account-sidebar__link is-active">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-3"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Профиль</span></a>
+        <a href="account-friend.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-4"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Приведи друга</span></a>
+        <a href="account-loyalty.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-5"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Програмы лояльности</span></a>
+        <a href="#" class="account-sidebar__link js-modal-trigger" data-id="#leave-account">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-6"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Выход</span></a>
+      </div>
+      <div class="modal modal--leave-account js-modal" id="leave-account">
+        <button class="modal__close js-close-modal">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="heading heading heading--centered">Выход</h2>
+        <p class="text modal__text">Вы действительно хотите выйти?</p>
+        <button class="button button--purple button--big button--form js-close-modal">Выйти</button>
+        <button class="button button--purple-white button--big button--form">Остаться в кабинете</button>
+      </div>
+      <div class="account-content js-account-content">
+        <div class="account-content__wrapper">
+          <h1 class="heading heading--account">Профиль</h1>
+          <div class="form-item">
+            <label for="email" class="form-item__label">Електронная почта</label>
+            <input type="email" id="email" class="input" placeholder="123456@ссloan.ua.com">
+          </div>
+          <div class="form-item">
+            <label for="create-pass" class="form-item__label">Создать пароль</label>
+            <input type="password" id="create-pass" class="input">
+            <label for="create-pass" class="form-item__label form-item__label--small">Оставьте пустым, если Вы не
+              хотите менять пароль!</label>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="phone" class="form-item__label">Мобильный телефон</label>
+            <input type="tel" id="phone" class="input" placeholder="38 (098) 305 66 45">
+          </div>
+          <div class="form-item">
+            <label for="bank-card" class="form-item__label">Банковская карта</label>
+            <a href="#" class="form-item--link" id="bank-card">Изменить банковскую карту 62459905****8943 </a>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="name" class="form-item__label">Имя</label>
+            <input type="text" id="name" class="input">
+          </div>
+          <div class="form-item">
+            <label for="secondname" class="form-item__label">Фамилия</label>
+            <input type="text" id="secondname" class="input">
+          </div>
+        </div>
+        <h6 class="heading heading--account">Паспортные данные</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="pass-name" class="form-item__label">Имя</label>
+            <input type="text" id="pass-name" class="input">
+          </div>
+          <div class="form-item">
+            <label for="pass-secondname" class="form-item__label">Фамилия</label>
+            <input type="text" id="pass-secondname" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="pass-middlename" class="form-item__label">Отчество</label>
+            <input type="text" id="pass-middlename" class="input">
+          </div>
+          <div class="form-item">
+            <input type="radio" id="biometric-check" name="sex" class="option-buttons__input">
+            <label for="biometric-check" class="option-buttons__label option-buttons__label--policy">Биометрический паспорт</label>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="pass-part" class="form-item__label">Серия паспорта</label>
+            <input type="text" id="pass-part" class="input">
+          </div>
+          <div class="form-item">
+            <label for="pass-num" class="form-item__label">Номер паспорта</label>
+            <input type="text" id="pass-num" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="pass-who" class="form-item__label">Кем выдан паспорт</label>
+            <input type="text" id="pass-who" class="input">
+          </div>
+          <div class="form-item">
+            <label for="pass-date" class="form-item__label">Дата выдачи паспорта</label>
+            <input type="text" id="pass-date" class="input" placeholder="дд / мм / гг">
+          </div>
+        </div>
+        <h6 class="heading heading--account">Семейное положение</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="relationship" class="form-item__label form-item__label--required">Семейное положение</label>
+            <input id="relationship" type="text" autocomplete="off" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">В браке</p>
+              <p class="form__select-menu-link js-select-option">Гражданский брак</p>
+              <p class="form__select-menu-link js-select-option">Разведен(а)</p>
+              <p class="form__select-menu-link js-select-option">Другое</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="dependent" class="form-item__label form-item__label--required">Другие лица на содержании</label>
+            <input id="dependent" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">Нет иждивенцев</p>
+              <p class="form__select-menu-link js-select-option">есть иждивенцы</p>
+              <p class="form__select-menu-link js-select-option">1 иждивенец</p>
+              <p class="form__select-menu-link js-select-option">2 иждивенец</p>
+            </div>
+          </div>
+        </div>
+        <h6 class="heading heading--account">Занятость</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="employer" class="form-item__label">Работодатель</label>
+            <input type="text" id="employer" class="input">
+          </div>
+          <div class="form-item">
+            <label for="type-of-work" class="form-item__label">Вид деятельности</label>
+            <input id="type-of-work" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">програмист</p>
+              <p class="form__select-menu-link js-select-option">дизайнер</p>
+              <p class="form__select-menu-link js-select-option">начальник</p>
+              <p class="form__select-menu-link js-select-option">подчиненный</p>
+              <p class="form__select-menu-link js-select-option">раб</p>
+            </div>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="position" class="form-item__label">Занимаемая должность</label>
+            <input id="position" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">програмист</p>
+              <p class="form__select-menu-link js-select-option">дизайнер</p>
+              <p class="form__select-menu-link js-select-option">начальник</p>
+              <p class="form__select-menu-link js-select-option">подчиненный</p>
+              <p class="form__select-menu-link js-select-option">раб</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="last-experience" class="form-item__label">Стаж на последнем месте работы</label>
+            <input id="last-experience" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">програмист</p>
+              <p class="form__select-menu-link js-select-option">дизайнер</p>
+              <p class="form__select-menu-link js-select-option">начальник</p>
+              <p class="form__select-menu-link js-select-option">подчиненный</p>
+              <p class="form__select-menu-link js-select-option">раб</p>
+            </div>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="work-phone" class="form-item__label">Телефон рабочего места</label>
+            <input type="tel" id="work-phone" class="input">
+          </div>
+          <div class="form-item">
+            <label for="education" class="form-item__label">Образование</label>
+            <input id="education" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">програмист</p>
+              <p class="form__select-menu-link js-select-option">дизайнер</p>
+              <p class="form__select-menu-link js-select-option">начальник</p>
+              <p class="form__select-menu-link js-select-option">подчиненный</p>
+              <p class="form__select-menu-link js-select-option">раб</p>
+            </div>
+          </div>
+        </div>
+        <h6 class="heading heading--account">Доходы</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="main-salary" class="form-item__label">Основной доход в месяц</label>
+            <input type="text" id="main-salary" class="input">
+          </div>
+          <div class="form-item">
+            <label for="additional-salary-source" class="form-item__label">Источник дополнительного дохода*</label>
+            <input id="additional-salary-source" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">програмист</p>
+              <p class="form__select-menu-link js-select-option">дизайнер</p>
+              <p class="form__select-menu-link js-select-option">начальник</p>
+              <p class="form__select-menu-link js-select-option">подчиненный</p>
+              <p class="form__select-menu-link js-select-option">раб</p>
+            </div>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="additional-salary" class="form-item__label">Дополнительный доход в месяц</label>
+            <input type="text" id="additional-salary" class="input">
+          </div>
+          <div class="form-item">
+            <label for="costs" class="form-item__label">Текущие расходы в месяц (кроме кредитов)*</label>
+            <input type="text" id="costs" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="credits" class="form-item__label">Непогашенные кредиты*</label>
+            <input id="credits" type="text" autocomplete="off" class="input input--select js-select-field">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">да</p>
+              <p class="form__select-menu-link js-select-option">нет</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="month-costs" class="form-item__label">Ежемесячные расходы по непогашенным кредитам</label>
+            <input type="text" id="month-costs" class="input">
+          </div>
+        </div>
+        <h6 class="heading heading--account">Контакт для дополнительной связи</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="contact-person" class="form-item__label">Контактное лицо*</label>
+            <input id="contact-person" type="text" autocomplete="off" class="input input--select js-select-field" placeholder="Брат / сестра">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">брат</p>
+              <p class="form__select-menu-link js-select-option">сестра</p>
+              <p class="form__select-menu-link js-select-option">подруга брата</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="contact-person-name" class="form-item__label">Контактное лицо (Имя, Фамилия)*</label>
+            <input type="text" id="contact-person-name" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="contact-person-phone" class="form-item__label">Мобильный телефон контактного лица*</label>
+            <input type="tel" id="contact-person-phone" class="input" placeholder="+38 (XXX)-XXX-XX-XX">
+          </div>
+        </div>
+        <h6 class="heading heading--account">Адрес регистрации</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="reg-region" class="form-item__label">Область регистрации</label>
+            <input id="reg-region" type="text" autocomplete="off" class="input input--select js-select-field" placeholder="Выбрать">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">брат</p>
+              <p class="form__select-menu-link js-select-option">сестра</p>
+              <p class="form__select-menu-link js-select-option">подруга брата</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="reg-region-point" class="form-item__label">Населенный пунк регистрации</label>
+            <input id="reg-region-point" type="text" autocomplete="off" class="input input--select js-select-field" placeholder="Выбрать">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">брат</p>
+              <p class="form__select-menu-link js-select-option">сестра</p>
+              <p class="form__select-menu-link js-select-option">подруга брата</p>
+            </div>
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="reg-street" class="form-item__label">Улица регистрации</label>
+            <input id="reg-street" type="text" autocomplete="off" class="input input--select js-select-field" placeholder="Выбрать">
+            <div class="js-select form__select-menu">
+              <p class="form__select-menu-link js-select-option">брат</p>
+              <p class="form__select-menu-link js-select-option">сестра</p>
+              <p class="form__select-menu-link js-select-option">подруга брата</p>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="reg-house" class="form-item__label">Дом регистрации</label>
+            <input type="text" id="reg-house" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="reg-flat" class="form-item__label">Квартира регистрации</label>
+            <input type="text" id="reg-flat" class="input">
+          </div>
+          <div class="form-item">
+            <label for="reg-home-phone" class="form-item__label">Домашний номер клиента</label>
+            <input type="text" id="reg-home-phone" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <input type="checkbox" id="reg-check" name="sex" class="option-buttons__input">
+            <label for="reg-check" class="option-buttons__label option-buttons__label--policy">Мой фактический адрес проживания
+              совпадает с адресом регистрации</label>
+          </div>
+        </div>
+        <h6 class="heading heading--account">Адрес проживания</h6>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="live-region" class="form-item__label">Область проживания</label>
+            <input type="text" id="live-region" class="input">
+          </div>
+          <div class="form-item">
+            <label for="live-point" class="form-item__label">Населенный пункт проживания</label>
+            <input type="text" id="live-point" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="live-street" class="form-item__label">Улица проживания</label>
+            <input type="text" id="live-street" class="input">
+          </div>
+          <div class="form-item">
+            <label for="live-house" class="form-item__label">Дом проживания</label>
+            <input type="text" id="live-house" class="input">
+          </div>
+        </div>
+        <div class="account-content__wrapper">
+          <div class="form-item">
+            <label for="live-flat" class="form-item__label">Улица проживания</label>
+            <input type="text" id="live-flat" class="input">
+          </div>
+          <div class="form-item">
+            <input type="checkbox" id="mailing-check" name="sex" class="option-buttons__input">
+            <label for="mailing-check" class="option-buttons__label option-buttons__label--policy">Я хочу получать рассылки</label>
+          </div>
+        </div>
+        <button type="submit" class="button button--purple button--form button--big">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer footer--purple">
+  <div class="container">
+    <div class="footer-contacts">
+      <a href="tel:044 222-77-33" class="footer-contacts__item">044 222-77-33</a>
+      <a href="mailto:help@ccloan.com.ua" class="footer-contacts__item">help@ccloan.com.ua</a>
+    </div>
+    <div class="footer-contacts">
+      <p class="footer-contacts__item">Украина 01004, г. Киев, <br>ул. Бассейная, дом 6</p>
+    </div>
+    <p class="policy-sign">
+      &copy;CCloan. All rights reserved.
+    </p>
+  </div>
+</footer>
+<script src="./js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCloan</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flex-container--header flex-container">
+        <a href="#" class="header__toggler js-menu-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="/" class="header__logo">
+            <svg class="header__logo-img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">О нас</a>
+            <a href="#" class="header__nav-item">Клиентам</a>
+            <a href="#" class="header__nav-item">Программа лояльности</a>
+            <a href="#" class="header__nav-item">Приведи друга</a>
+        </nav>
+        <a href="tel:+380442227733" class="header__phone">044 222-77-33</a>
+        <a href="#" class="button button--purple button--small header__login logged-in"><span>М</span>ихаил <span>Т</span>кач</a>
+        <!--When user is logged in add class 'logged-in' to this button ^ and
+        first letters of name and second name must be in span tag because of design-->
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu-close js-menu-close"></a>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--about js-header-dropdown-link">О нас</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Про компанию</a>
+            <a href="#" class="header__menu-item">Вакансии</a>
+            <a href="#" class="header__menu-item">Юридическая информация</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--clients js-header-dropdown-link">Клиентам</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Вопросы и ответы</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item--invite">Приведи друга</a>
+        <a href="#" class="header__menu-item header__menu-item--loyality">Программа лояльности</a>
+        <div class="header__menu-wrapper">
+            <div class="header__langs">
+                <a href="#" class="header__langs-item">РУС</a>
+                <a href="#" class="header__langs-item active">УКР</a>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-item facebook">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item insta">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-insta"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-menu__transparent-bg"></div>
+</header>
+<main>
+  <button class="ask-widget"></button>
+  <div class="container">
+    <h1 class="heading account-holder">Михаил Ткач</h1>
+  </div>
+  <div class="account">
+    <div class="container flex-container">
+      <div class="account-sidebar js-account-sidebar">
+        <a href="account-application.html" class="account-sidebar__link is-active">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-1"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Заявка на кредит</span></a>
+        <a href="account-history.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-2"></use>
+          </svg>
+          <span class="account-sidebar__link-text">История кредитов</span></a>
+        <a href="account-profile.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-3"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Профиль</span></a>
+        <a href="account-friend.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-4"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Приведи друга</span></a>
+        <a href="account-loyalty.html" class="account-sidebar__link">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-5"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Програмы лояльности</span></a>
+        <a href="#" class="account-sidebar__link js-modal-trigger" data-id="#leave-account">
+          <svg class="account__icon">
+            <use xlink:href="./img/sprites/sprite.svg#account-6"></use>
+          </svg>
+          <span class="account-sidebar__link-text">Выход</span></a>
+      </div>
+      <div class="modal modal--leave-account js-modal" id="leave-account">
+        <button class="modal__close js-close-modal">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="heading heading heading--centered">Выход</h2>
+        <p class="text modal__text">Вы действительно хотите выйти?</p>
+        <button class="button button--purple button--big button--form js-close-modal">Выйти</button>
+        <button class="button button--purple-white button--big button--form">Остаться в кабинете</button>
+      </div>
+      <div class="account-content js-account-content application">
+        <div class="new-request__wrapper">
+          <h1 class="heading heading--account">Новая заявка</h1>
+          <div class="js-calculator calc--new-request">
+            <form action="#" class="calc__form">
+              <label>сумма</label>
+              <div class="calc__form-wrapper">
+                <span class="calc__form-range-btn minus"></span>
+                <input class="calc__form-range" type="range" min="400" max="14999" value="400" step="1">
+                <span class="calc__form-range-btn plus"></span>
+              </div>
+              <p class="calc__text-field-wrapper"><span class="calc__text-field js-count-money">400</span> грн</p>
+            </form>
+          </div>
+          <div class="js-calculator calc--new-request">
+            <form action="#" class="calc__form">
+              <label>Срок</label>
+              <div class="calc__form-wrapper">
+                <span class="calc__form-range-btn minus"></span>
+                <input class="calc__form-range" type="range" min="5" max="30" value="5" step="1">
+                <span class="calc__form-range-btn plus"></span>
+              </div>
+              <p class="calc__text-field-wrapper"><span class="calc__text-field js-count-days">5</span> дней</p>
+            </form>
+          </div>
+          <div class="calc__percents">
+            <p>ПРОЦЕНТЫ ЗА ПОЛЬЗОВАНИЕ</p>
+            <span class="js-count-percents">26.6грн</span>
+          </div>
+        </div>
+        <div class="legal-documents legal-documents--account legal-documents--application flex-container">
+          <a href="" class="legal-documents__link">
+            <h3 class="legal-documents__name">Звіт незалежних аудиторів 2017</h3>
+          </a>
+          <a href="" class="legal-documents__link">
+            <h3 class="legal-documents__name">Звіт незалежних аудиторів 2017</h3>
+          </a>
+        </div>
+          <p class="heading heading--new-request">Согласие (разрешение) субъекта персональных данных.
+            <br>Правила предоставления денежных средств взаймы ООО "СС Лоун"
+          </p>
+          <input type="checkbox" id="policy" name="policy" class="option-buttons__input">
+          <label for="policy" class="option-buttons__label option-buttons__label--policy">Я, как субъект персональных
+            данных, предоставляю свое согласие (разрешение) ОБЩЕСТВУ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «СС ЛОУН» (код
+            ЕГРПОУ 40071779) на обработку моих персональных данных в соответствии с ПОРЯДКОМ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ
+            ДАННЫХ ОБЩЕСТВОМ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «СС ЛОУН».</label>
+          <a href="#" class="button button--purple button--big new-request__button">СОЗДАТЬ ЗАЯВКУ</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer footer--purple">
+    <div class="container">
+      <div class="footer-contacts">
+        <a href="tel:044 222-77-33" class="footer-contacts__item">044 222-77-33</a>
+        <a href="mailto:help@ccloan.com.ua" class="footer-contacts__item">help@ccloan.com.ua</a>
+      </div>
+      <div class="footer-contacts">
+        <p class="footer-contacts__item">Украина 01004, г. Киев, <br>ул. Бассейная, дом 6</p>
+      </div>
+      <p class="policy-sign">
+        &copy;CCloan. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</main>
+<script src="./js/main.min.js"></script>
+</body>
+</html>

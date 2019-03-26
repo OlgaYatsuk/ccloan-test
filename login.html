@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCloan</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container flex-container--header flex-container">
+        <a href="#" class="header__toggler js-menu-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="/" class="header__logo">
+            <svg class="header__logo-img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">О нас</a>
+            <a href="#" class="header__nav-item">Клиентам</a>
+            <a href="#" class="header__nav-item">Программа лояльности</a>
+            <a href="#" class="header__nav-item">Приведи друга</a>
+        </nav>
+        <a href="tel:+380442227733" class="header__phone">044 222-77-33</a>
+        <a href="#" class="button button--purple button--small header__login logged-in"><span>М</span>ихаил <span>Т</span>кач</a>
+        <!--When user is logged in add class 'logged-in' to this button ^ and
+        first letters of name and second name must be in span tag because of design-->
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu-close js-menu-close"></a>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--about js-header-dropdown-link">О нас</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Про компанию</a>
+            <a href="#" class="header__menu-item">Вакансии</a>
+            <a href="#" class="header__menu-item">Юридическая информация</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item-dropdown header__menu-item--clients js-header-dropdown-link">Клиентам</a>
+        <div class="header__menu-dropdown js-header-dropdown">
+            <a href="#" class="header__menu-item">Вопросы и ответы</a>
+        </div>
+        <a href="#" class="header__menu-item header__menu-item--invite">Приведи друга</a>
+        <a href="#" class="header__menu-item header__menu-item--loyality">Программа лояльности</a>
+        <div class="header__menu-wrapper">
+            <div class="header__langs">
+                <a href="#" class="header__langs-item">РУС</a>
+                <a href="#" class="header__langs-item active">УКР</a>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-item facebook">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item insta">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header-insta"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-menu__transparent-bg"></div>
+</header>
+<main class="login">
+  <button class="ask-widget"></button>
+  <div class="container container--thin">
+    <h1 class="heading heading--big">Вхід</h1>
+    <form action="" class="form">
+      <div class="form-item">
+        <label for="email" class="form-item__label form-item__label--required">E-mai</label>
+        <input type="email" id="email" class="input" placeholder="E-mail" required>
+      </div>
+      <div class="form-item">
+        <label for="password" class="form-item__label form-item__label--required">Пароль</label>
+        <input type="password" id="password" class="input" placeholder="Пароль" required>
+        <label for="password" class="form-item__password-toggler js-password-show">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#pass-ic"></use>
+          </svg>
+        </label>
+      </div>
+      <button type="submit" class="button button--purple button--big button--form">Авторизація</button>
+      <div class="form__password-recover">
+        <span>Забыли пароль?</span>
+        <a href="#" class="form__password-recover-link">Восстановить</a>
+      </div>
+    </form>
+  </div>
+</main>
+<footer class="footer">
+  <section class="seo-cloud">
+    <div class="container flex-container flex-container--seo">
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно </a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+      <a href="#" class="button button--grey button--seo">срочно деньги на карту</a>
+    </div>
+  </section>
+
+  <section class="footer-lists">
+    <div class="container">
+      <div class="flex-container flex-container--footer">
+        <div class="list">
+          <h5 class="heading heading--medium">О нас</h5>
+          <a href="#" class="list__link">Клиентам</a>
+          <a href="#" class="list__link">Програма лояльности</a>
+          <a href="#" class="list__link">Приведи друга</a>
+          <a href="#" class="list__link">Вопросы - ответы</a>
+          <a href="#" class="list__link">Блог</a>
+        </div>
+        <div class="list">
+          <h5 class="heading heading--medium">Телефоны</h5>
+          <a href="tel:+380955831177" class="list__link">+38 095 583-11-77</a>
+          <a href="tel:+380975831177" class="list__link">+38 097 583-11-77</a>
+          <a href="tel:+380935831177" class="list__link">+38 093 583-11-77</a>
+          <a href="tel:+380442227733" class="list__link">+38 044 222-77-33</a>
+        </div>
+        <div class="list">
+          <h5 class="heading heading--medium">Контакты</h5>
+          <a href="mailto:help@ccloan.com.ua" class="list__link">help@ccloan.com.ua</a>
+          <a href="#" class="list__link">Украина 01004, г. Киев, ул. Бассейная, дом 6</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="payments">
+    <div class="container flex-container flex-container--payments">
+      <img src="./img/payments/visa.svg" alt="visa" class="payments__item">
+      <img src="./img/payments/mastercard.svg" alt="mastercard" class="payments__item">
+      <img src="./img/payments/systema.svg" alt="systema" class="payments__item">
+      <img src="./img/payments/ibox.svg" alt="ibox" class="payments__item">
+      <img src="./img/payments/platon.svg" alt="platon" class="payments__item">
+      <img src="./img/payments/paymarket.svg" alt="paymarket" class="payments__item">
+    </div>
+  </section>
+  <section class="worldwide">
+    <div class="container">
+      <h5 class="heading heading--medium">СС ЛОУН в мире:</h5>
+      <div class="flex-container flex-container--worldwide">
+        <img src="./img/flags/spain.svg" alt="" class="worldwide__item">
+        <img src="./img/flags/ukraine.svg" alt="" class="worldwide__item">
+        <img src="./img/flags/georgia.svg" alt="" class="worldwide__item">
+        <img src="./img/flags/kazahstan.svg" alt="" class="worldwide__item">
+      </div>
+    </div>
+  </section>
+  <section class="seo-text">
+    <div class="container">
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Кредиты онлайн за 10 минут без отказов до 10 000 грн</h6>
+        <p class="text--small">Ритм жизни современного человека очень быстрый и требовательный к деньгам, поэтому кредит
+          онлайн под низкий процент в Украине так популярен. Деньги нужны на покупку продуктов, модной одежды,
+          обслуживание автомобиля, оплату коммунальных счетов, приобретение лекарств, ремонт или покупку бытовой
+          техники, электроники, оплату обучения, планирование отдыха и многое другое. Вам не придется во всем себе
+          отказывать и копить деньги на покупку желаемых вещей, ведь достаточно просто взять кредит онлайн на карту.
+          Такой вариант получения денег наиболее оптимальный, ведь взять займ можно срочно. Ежедневно к займам прибегают
+          сотни жителей нашей страны. Гарантированно получить кредит онлайн на карточку можно в международной финансовой
+          компании «CC ЛОУН». Мы уже более года успешно работаем в Украине, а также Грузии и Казахстане. Имеем
+          действующую лицензию и все разрешающие документы на работу, что позволяет нам выдавать всем категориям
+          клиентов честные кредиты онлайн на банковскую карту.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Почему стоит оформить кредит на банковскую карту</h6>
+        <p class="text--small">Именно онлайн перевод на карту является наиболее удобным способом получить кредит. За
+          пару минут оформить быстрый онлайн кредит на карту можно удаленно из любого места. Подписывается электронный
+          договор, который имеет полную юридическую силу. Если оформляя кредит онлайн в городе Киев, вы столкнулись с
+          различными трудностями, то наши специалисты окажут квалифицированную бесплатную консультацию по всем вопросам.
+          Решение об одобрении заявки принимается за короткое время, поэтому в любой жизненной ситуации вы сможете
+          получить займ срочно. Для перевода подходит карта любого банка Украины, поэтому деньги можно будет просто
+          снять. За счет всех этих преимуществ прозрачный кредит онлайн на банковскую карту не только выгоден, но и
+          безопасен.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Честные онлайн займы в интернете</h6>
+        <p class="text--small">Необходимый онлайн займ на карту вы можете получить в "СС Лоун". Для получения кредита не
+          требуется большого количества документов. Нужно только правильно заполнить анкету, внести мобильный номер и
+          e-mail для связи, а также предоставить фото паспорта и ИНН. Процедура максимально автоматизирована и упрощена,
+          что позволяет через интернет взять мгновенный кредит на карту онлайн. Мы работаем на следующих условиях: -
+          Взять кредит без справки о доходах можно на сумму 400 - 10 000 гривен. - Работаем без выходных, поэтому вы
+          всегда сможете получить кредит онлайн. - Процентная ставка составляет 1,33%/день. (для новых клиентов 0,01% в
+          день*) - При необходимости экспресс кредит онлайн можно пролонгировать до 29 дней на выгодных условиях без
+          штрафных санкций. - Если займ не выплачен вовремя, то процентная ставка возрастает до 3%/день. Если Вы не
+          выплатите акционный кредит вовремя (под 0,01% в день), то вы нарушаете условия акции. В результате за весь
+          период пользования кредитом, указанный в Вашем Договоре, Вам начислят проценты по 1,33% в день. Начиная с
+          первого дня просрочки, проценты по Вашему займу вырастут до 3% в день.На сайте размещен удобный
+          онлайн-калькулятор, который позволяет заранее просчитать насколько выгодный моментальный кредит онлайн.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Как получить деньги до зарплаты без хлопот</h6>
+        <p class="text--small">Чаще всего финансовые трудности люди испытывают в конце месяца и им требуются деньги до
+          зарплаты. У нас можно будет оформить кредит за 15 минут онлайн для получения средств. Получить деньги можно
+          даже не выходя из дома, что очень удобно для большинства людей. Выдается кредит без справок и поручителей по
+          упрощенной процедуре. Вы всегда можете его досрочно погасить без штрафных санкций. Обращайтесь к нам в любое
+          время, и вы получите кредит.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Процентная ставка</h6>
+        <p class="text--small">Стандартная процентная ставка является фиксированной и составляет 1.33% в день. Годовая
+          процентная ставка по займу составляет 478.8%. Пример расчета стандартной процентной ставки: для кредита в 1000
+          грн на 29 дней совокупная стоимость займа с учетом процентной ставки по займу и стоимости всех услуг,
+          связанных с получением займа и заключением договора займа составляет 39.9% в месяц, что в денежном эквиваленте
+          составляет 1399 гривен 00 копеек.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Просрочка</h6>
+        <p class="text--small">В случае нарушения клиентом сроков оплаты займа и неисполнения своих обязательств по
+          договору, процентная ставка по кредиту будет увеличена до 3% в день.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <h6 class="heading heading--small">Последствия невыплаты</h6>
+        <p class="text--small">Eсли Вы умышленно уклоняетесь от обязательств по выплате кредита, то информация по Вашей
+          задолженности будет передана в бюро кредитных историй, что в будущем негативно повлияет на Ваши попытки
+          получить кредит в банках или кредитных организациях, а также к Вам могут применятся методы принудительного
+          взыскания, в рамках действующего законодательства Украины.</p>
+      </div>
+      <div class="seo-text__paragraph">
+        <p class="text--small">
+          *Под нулевым процентом подразумевается процентная ставка 0.01% в день
+        </p>
+      </div>
+      <div class="policy">
+        <p class="text--small">&copy; 2013 - 2019 ТОВ «CCloan» – Свідоцтво №16102832 ІК №105 про реєстрацію фінансової установи, видане Нацкомфінпослуг 21.03.2013 р.
+          Перший сервіс онлайн-кредитів в Україні, в якому можна швидко отримати гроші на карту будь-якого українського банку.</p>
+      </div>
+    </div>
+  </section>
+</footer>
+<script src="./js/main.min.js"></script>
+</body>
+</html>
